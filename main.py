@@ -73,9 +73,6 @@ dp.callback_query.register(get_paragraph_kb, CoursesState.lesson)
 dp.callback_query.register(get_paragraph_text, CoursesState.paragraph)
 scheduler = AsyncIOScheduler(timezone=get_localzone())
 
-chat_id = os.getenv('USER_ID')
-
-
 async def start():
     logging.basicConfig(level=logging.DEBUG)
 
